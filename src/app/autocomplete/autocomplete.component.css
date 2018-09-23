@@ -1,0 +1,25 @@
+.wrapper-title {
+    margin-left: 20px;
+}
+
+.wrapper {
+    outline: 2px solid hsl(284, 43%, 21%);
+    padding: 20px;
+    margin: 20px;
+}
+
+.component-section {
+    margin: 20px 0;
+}
+
+.component-section:first-child {
+    margin-top: 0;
+}
+
+.component-section:last-child {
+    margin-bottom: 0;
+}
+
+.autocomplete-album-fullwidth {
+    width: 50%;
+}

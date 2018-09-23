@@ -1,0 +1,13 @@
+<h3 class="wrapper-title">Autocomplete components</h3>
+<div class="wrapper">
+  <form class="autocomplete-album component-section">
+    <mat-form-field class="autocomplete-album-fullwidth">
+      <input type="text" placeholder="Pick your favorite album..." aria-label="album-name" matInput [formControl]="autoCompleteAlbum" [matAutocomplete]="album">
+      <mat-autocomplete #album="matAutocomplete">
+        <mat-option *ngFor="let albumName of albumNames" [value]="albumName">
+        {{ albumName }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>
+</div>

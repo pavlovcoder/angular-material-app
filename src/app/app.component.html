@@ -1,10 +1,4 @@
-<h3>Simple autocomplete form-input:</h3>
+<h2>Angular Material Components Review</h2>
 <hr>
-<form class="autocomplete-form">
-  <mat-form-field class="autocomplete-full-width">
-    <input type="text" placeholder="Pick your iPhone" aria-label="iPhone picker" matInput [formControl]="myControl" [matAutocomplete]="auto">
-    <mat-autocomplete #auto="matAutocomplete">
-      <mat-option *ngFor="let option of options" [value]="option">{{option}}</mat-option>
-    </mat-autocomplete>
-  </mat-form-field>
-</form>
+<app-autocomplete></app-autocomplete>
+
